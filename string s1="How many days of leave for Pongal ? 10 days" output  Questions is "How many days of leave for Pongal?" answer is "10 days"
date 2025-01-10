@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "How many days of leave for Pongal ? 10 days";
+        String[] parts = s1.split("\\?", 2);
+        String question = parts[0].trim() + "?";
+        String answer = parts[1].trim();
+        System.out.println("Question is \"" + question + "\"");
+        System.out.println("Answer is \"" + answer + "\"");
+    }
+}
