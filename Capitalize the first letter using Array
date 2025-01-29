@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of names: ");
+        int size = sc.nextInt();
+        sc.nextLine();
+
+        String[] words = new String[size];
+        String result = "";
+
+        for (int i = 0; i < size; i++) {
+            words[i] = sc.nextLine();
+            words[i] = Character.toUpperCase(words[i].charAt(0)) + words[i].substring(1).toLowerCase();
+            result += words[i] + " ";
+        }
+
+        System.out.println(result);
+        sc.close();
+    }
+}
