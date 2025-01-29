@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        String names = "RAVI AnJali KaJU MUKESH";
+        String[] words = names.split(" ");
+        String result = "";
+        for (int i = 0; i < words.length; i++) {
+            char first = Character.toUpperCase(words[i].charAt(0));
+            String rest = words[i].substring(1).toLowerCase();
+            words[i] = first + rest;
+        }
+        result = String.join(" ", words);
+        System.out.println(result);
+    }
+}
