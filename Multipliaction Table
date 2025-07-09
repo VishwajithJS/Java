@@ -1,12 +1,13 @@
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
-        System.out.println("The Multiplication Table:");
         System.out.println("Enter the Multiplication table you want!!");
         Scanner sc = new Scanner(System.in);
         int a= sc.nextInt();
         System.out.println("Enter the limit:");
         int b= sc.nextInt();
+        System.out.println("The Multiplication Table:"+a);
+        System.out.println("----------------------------");
         for(int i=0;i<b;i++){
             System.out.println((i+1)+"x"+a+"="+((i+1)*a));
         }
