@@ -1,0 +1,28 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value of n =");
+        int n = sc.nextInt();
+        System.out.println("Enter the value of r =");
+        int r = sc.nextInt();
+        int factn = 1;
+        for (int i = 1; i <= n; i++) {
+            factn *= i;
+        }
+        System.out.println("The n! value is " + factn);
+        int factr = 1;
+        for (int j = 1; j <= r; j++) {
+            factr *= j;
+        }
+        System.out.println("The r! value is " + factr);
+        int dif = n - r;
+        int factnr = 1;
+        for (int k = 1; k <= dif; k++) {
+            factnr *= k;
+        }
+        System.out.println("The (n - r)! value is " + factnr);
+        int ncr = factn / (factr * factnr);
+        System.out.println("The nCr value is " + ncr);
+    }
+}
