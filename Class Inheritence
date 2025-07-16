@@ -1,0 +1,24 @@
+class Main{
+    public static void main(String[] args){
+        SRET.uniform();
+        Med.uniform();
+        Med.place();
+        SRET.place();
+    }
+}
+class SRET{
+    static void uniform(){
+        System.out.println("Grey and Black");
+    }
+    static void place(){
+        System.out.println("The institution is in Porur");
+    }
+    static void type(){
+        System.out.println("It is Deemed to be university");
+    }
+}
+class Med extends SRET{
+    static void uniform(){
+        System.out.println("White and Blue");
+    }
+}
