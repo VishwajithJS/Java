@@ -1,0 +1,32 @@
+class Main {
+    public static void main(String[] args) {
+        animal tommy = new dog();
+        tommy.character();
+        tommy.sound();
+        cat kitty=new cat();
+        kitty.sound();
+       
+    }
+}
+class dog extends animal{
+    void sound(){
+        System.out.println("Dogs bark");
+    }
+}
+class cat extends animal{
+    void sound(){
+        System.out.println("meow meow");
+    }
+}
+class animal{
+    void sound(){
+        System.out.println("all animals make sound");
+       
+    }
+    static void food(){
+        System.out.println("all animals eat food");
+    }
+    void character(){
+        System.out.println("all animals are unpridictable");
+    }
+}
