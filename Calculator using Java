@@ -1,0 +1,47 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int a = sc.nextInt();
+        System.out.println("Enter the number:");
+        int b = sc.nextInt();
+        System.out.println("Enter the arithmetic operation 1. add 2. multiply 3. subtract 4.divide:");
+        int n = sc.nextInt(); 
+
+        if (n == 1) { 
+            calculator.add(a, b);
+        } else if (n == 2) {
+            calculator.multiply(a, b);
+        } else if (n == 3) {
+            calculator.sub(a, b);
+        } else if (n == 4) {
+            calculator.div(a, b);
+        } else {
+            System.out.println("Enter a valid operation");
+        }
+    }
+}
+
+class calculator {
+    static void add(int a, int b) {
+        System.out.println(a + b);
+    }
+
+    static void multiply(int a, int b) {
+        System.out.println(a * b);
+    }
+
+    static void sub(int a, int b) {
+        System.out.println(a - b);
+    }
+
+    static void div(int a, int b) {
+        if (b == 0) {
+            System.out.println("Cannot divide by zero");
+        } else {
+            System.out.println(a / b);
+        }
+    }
+}
