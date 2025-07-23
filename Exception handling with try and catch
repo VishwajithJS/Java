@@ -1,0 +1,21 @@
+import java.util.*;
+import java.util.InputMismatchException;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        try{
+            System.out.println("Enter the dividend:");
+            int dividend = sc.nextInt();
+            System.out.println("Enter the divisor:");
+            int divisor = sc.nextInt();
+            System.out.print(dividend/divisor);
+        }
+        catch(InputMismatchException Muk){
+            System.out.println("Check the inputs");
+            
+        }
+        finally{
+            System.out.print("Thank you for using the system");
+        }
+    }
+}
