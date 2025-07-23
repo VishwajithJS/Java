@@ -1,0 +1,53 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Animal Type (Dog OR Cat):");
+        String Choice = sc.nextLine().toLowerCase();
+        System.out.println(Choice);
+        
+        animal animal = null;
+
+        System.out.println("Enter the name of the animal");
+        String name = sc.nextLine();
+
+        if (Choice.equals("dog")) {
+            animal = new dog(name);
+        } else if (Choice.equals("cat")) {
+            animal = new cat(name);
+        } else {
+            System.out.println("Invalid Animal");
+        }
+
+        if (animal != null) {
+            animal.sound();
+        }
+    }
+}
+
+class animal {
+    String name;
+    animal(String name) {
+        this.name = name;
+    }
+    void sound() {
+        System.out.println("All animals make sound");
+    }
+}
+class dog extends animal {
+    dog(String name) {
+        super(name);
+    }
+    void sound() {
+        System.out.print("Dog barks" + name);
+    }
+}
+class cat extends animal {
+    cat(String name) {
+        super(name);
+    }
+    void sound() {
+        System.out.print("Cat meows" + name);
+    }
+}
