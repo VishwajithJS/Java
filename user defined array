@@ -1,0 +1,14 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+        System.out.print("Enter the size of the array:");
+        int size = sr.nextInt();
+        int[] marks = new int [size];
+        for(int i=0;i<size;i++){
+            System.out.print("Element "+(i+1)+": ");
+            marks[i]=sr.nextInt();
+        }
+        for(int a:marks) System.out.print(a+" ");
+    }
+}
