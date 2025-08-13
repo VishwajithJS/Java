@@ -1,0 +1,9 @@
+class Main {
+    public static void main(String[] args) {
+        String num1 = "10";
+        String num2 = "20";
+        int newnum1 = Integer.parseInt(num1);
+        int newnum2 = Integer.parseInt(num2);
+        System.out.println(newnum1+newnum2);
+    }
+}
